@@ -1,0 +1,59 @@
+/* General Navbar Styles */
+.navbar {
+    background-color: #080361; /* Dark background */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Padding around navbar */
+}
+
+/* Logo Styling */
+.navbar .logo {
+    color: #ffffff; /* White text color */
+    font-size: 24px; /* Larger font size for logo */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Display links in a row */
+    gap: 20px; /* Space between each link */
+}
+
+/* Navigation Links Styling */
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px; /* Padding around links */
+    transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect on Links */
+.nav-links a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 5px; /* Rounded edges on hover */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack logo and links vertically */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0; /* Add margin between links */
+    }
+}

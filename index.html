@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baran Çiçek - Personal Website</title>
     <link rel="stylesheet" href="css/style-light-dark.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="icon" href="images/space-shuttle.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Baran Çiçek</a>
+        <div class="hamburger" onclick="toggleNavbar()">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="javascript:void(0);" onclick="visitPlaces()">Places</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider"></span>
+        </label>
+    </nav>
+
     <header>
         <div class="profile-container">
             <img src="images/a-baran-edit.JPG" alt="Baran Çiçek" class="profile-pic">
@@ -17,34 +32,23 @@
             <p>Geomatics Engineer | Entrepreneur | GIS Enthusiast</p>
             <button id="visit-button" onclick="visitPlaces()">Click to see places I have visited</button>
 
-            <label class="switch">
-                <input type="checkbox" id="dark-mode-toggle">
-                <span class="slider"></span>
-            </label>
+            <section class="contact">
+                <div class="contact-info">
+                    <a href="mailto:barancicek0658@gmail.com" target="_blank">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/barancicek" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/barancicek" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </div>
+            </section>
+
 
         </div>
     </header>
-
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            I have founded two startups, gained invaluable entrepreneurial experience, and skillfully managed an international team of 25 individuals.
-            Alongside my entrepreneurial ventures, I possess a deep-seated interest in Geographic Information Systems (GIS), fueled by my passion for space and geography.
-        </p>
-        <p>I've lived in various countries, embracing diverse cultures, and cultivating an open-minded, adaptable, and solution-driven approach to challenges.</p>
-    </section>
-
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>ArcGIS Pro</li>
-            <li>GeoServer</li>
-            <li>PostgreSQL</li>
-            <li>Python, Django, TensorFlow, Neural Radiance Fields</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Cloud Computing (Azure and AWS)</li>
-        </ul>
-    </section>
 
     <section class="experience">
         <h2>Work Experience</h2>
@@ -53,7 +57,6 @@
             <p>Zagreb, Croatia</p>
             <p>I apply QGIS for comprehensive market analyses, utilizing GIS to examine spatial distribution, providing valuable insights for strategic decisions.</p>
         </div>
-
         <div class="job">
             <h3>Founder - FIORES GLOBAL (2022 - 2023)</h3>
             <p>Ankara, Turkey</p>
@@ -70,21 +73,6 @@
         <div class="degree">
             <h3>Erasmus+ - Politechnika Warszawska (2024 - Present)</h3>
             <p>Mobile Mapping and Navigation Systems course with a focus on advanced GNSS processing and autonomous navigation strategies.</p>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <a href="mailto:barancicek0658@gmail.com" target="_blank">
-                <i class="fas fa-envelope fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/barancicek" target="_blank">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/barancicek" target="_blank">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
         </div>
     </section>
 

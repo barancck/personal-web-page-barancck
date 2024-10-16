@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style-light-dark.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Baran Çiçek</a>
+        <div class="hamburger" onclick="toggleNavbar()">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="javascript:void(0);" onclick="visitPlaces()">Places</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider"></span>
+        </label>
+    </nav>
+    
+    <header class="about-header">
+        <h1>About Me!</h1>
+        <p>Who am I and where are my qualifications?</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I have founded two startups, gained invaluable entrepreneurial experience, and skillfully managed an international team of 25 individuals.
+            Alongside my entrepreneurial ventures, I possess a deep-seated interest in Geographic Information Systems (GIS), fueled by my passion for space and geography.
+        </p>
+        <p>I've lived in various countries, embracing diverse cultures, and cultivating an open-minded, adaptable, and solution-driven approach to challenges.</p>
+    </section>
+    
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>ArcGIS Pro</li>
+            <li>GeoServer</li>
+            <li>PostgreSQL</li>
+            <li>Python, Django, TensorFlow, Neural Radiance Fields</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Cloud Computing (Azure and AWS)</li>
+        </ul>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
